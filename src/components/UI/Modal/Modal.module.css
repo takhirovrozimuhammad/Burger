@@ -1,0 +1,15 @@
+.Modal{
+  position:fixed;
+  z-index:100;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width:min(520px, calc(100% - 32px));
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 26px 70px rgba(0,0,0,.22);
+  border-radius: 18px;
+  padding: 16px;
+  transition: all .18s ease;
+}

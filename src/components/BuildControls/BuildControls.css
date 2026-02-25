@@ -1,0 +1,37 @@
+.Controls{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding-top:10px;
+}
+.ControlRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:10px;
+  border-radius:14px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.05);
+}
+.Left{display:flex; align-items:baseline; gap:10px}
+.Name{font-weight:900}
+.Count{font-size:12px; color:rgba(0,0,0,.55); font-weight:800}
+.Actions{display:flex; gap:8px}
+.Less,.More{
+  border:0;
+  border-radius:12px;
+  padding:8px 12px;
+  font-weight:900;
+  cursor:pointer;
+  transition: transform .12s ease, filter .12s ease, opacity .12s ease;
+}
+.Less{background: rgba(0,0,0,.06)}
+.Less:hover{transform: translateY(-1px)}
+.Less:disabled{opacity:.45; cursor:not-allowed}
+.More{
+  color:#fff;
+  background: linear-gradient(135deg, #ff9a3d, #ff5a2f);
+  box-shadow: 0 10px 22px rgba(255,90,47,.25);
+}
+.More:hover{transform: translateY(-1px); filter:brightness(1.02)}
